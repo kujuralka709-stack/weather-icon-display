@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Condition Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="sunny">
+  <main class="weather-card">
+    <h1>Weather Condition Selector</h1>
+    <p>Select a weather condition below.</p>
+
+    <label for="weatherSelect">Choose Weather:</label>
+    <select id="weatherSelect">
+      <option value="">-- Choose weather --</option>
+      <option value="sunny">Sunny</option>
+      <option value="rainy">Rainy</option>
+      <option value="cloudy">Cloudy</option>
+      <option value="snowy">Snowy</option>
+      <option value="stormy">Stormy</option>
+      <option value="windy">Windy</option>
+    </select>
+
+    <section class="weather-display" aria-live="polite">
+      <div id="weatherIcon">🌤️</div>
+      <h2 id="weatherTitle">Welcome!</h2>
+      <p id="weatherDescription">
+        Select a condition to see its details.
+      </p>
+    </section>
+    <small>Weather demo — no API required</small>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

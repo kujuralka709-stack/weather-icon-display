@@ -1,0 +1,103 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: background 0.4s ease;
+  background: linear-gradient(135deg, #fde68a, #fdba74);
+}
+
+body.sunny {
+  background: linear-gradient(135deg, #fde68a, #fdba74);
+}
+
+body.rainy {
+  background: linear-gradient(135deg, #bfdbfe, #64748b);
+}
+
+body.cloudy {
+  background: linear-gradient(135deg, #e2e8f0, #94a3b8);
+}
+
+body.snowy {
+  background: linear-gradient(135deg, #e0f2fe, #ffffff);
+}
+
+body.stormy {
+  background: linear-gradient(135deg, #475569, #312e81);
+}
+
+body.windy {
+  background: linear-gradient(135deg, #bbf7d0, #bae6fd);
+}
+
+.weather-card {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px #0002;
+}
+
+h1 {
+  color: #1e3a8a;
+  font-size: 26px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 20px 0 8px;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+}
+
+.weather-display {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 15px;
+}
+
+#weatherIcon {
+  font-size: 65px;
+}
+
+#weatherTitle {
+  color: #1e3a8a;
+}
+
+#weatherDescription {
+  line-height: 1.6;
+  color: #475569;
+}
+
+small {
+  display: block;
+  margin-top: 18px;
+  color: #64748b;
+}
+
+@media (max-width: 480px) {
+  .weather-card {
+    padding: 20px;
+  }
+}
